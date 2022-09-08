@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Student Table</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body bgcolor="yellow">
+        <h1 align="center"> Student Records</h1>
+        <div align="center">
+        <form>
+             <input type="text" style="width:auto;" id="Rollno" name="Rollno" placeholder="Roll No." required><br><br>
+             <input type="text" id="Sname" name="Sname" placeholder="Student Name" required><br><br>
+             <button type="button" style="background-color:green;width:auto" onclick="insert()" >Add New</button>
+             <button type="button" style="background-color:red ;height: auto;" onclick="deletee()">Delete</button>
+           </form>
+           </div>
+        <table id="tb" align="center">
+            <tr>
+              <th>Roll Number</th>
+              <th>Name</th>
+            </tr>
+          </table>
+          <script>
+            function Clear() {
+              document.getElementById("Rollno").value = "";
+             document.getElementById("Sname").value = "";
+             }
+          </script>
+          <script>
+            function deletee()
+            {
+                document.getElementById("tb").deleteRow(-1);
+            }
+          </script>
+<script>
+    function insert() {
+        var table = document.getElementById("tb");
+
+          var row = table.insertRow(1);
+
+          var cell1 = row.insertCell(0);
+          var cell2 = row.insertCell(1);
+
+          cell1.innerHTML = document.getElementById("Rollno").value;
+          cell2.innerHTML = document.getElementById("Sname").value;
+          Clear();
+}
+</script>
+ 
+    </body>
+</html>

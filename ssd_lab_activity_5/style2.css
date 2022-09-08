@@ -1,0 +1,29 @@
+
+            body{
+                font-family:Arial;
+            }
+            table, td, th {
+              border: 1px solid;
+              padding: 2px;
+              
+            }
+            tr:nth-child(even) {
+               background-color: orange;
+                   } 
+            tr:nth-child(odd) {
+               background-color: greenyellow;
+                   } 
+            td{
+                
+                height: 30px;
+            }
+            th {
+                height:50px;
+                background-color: gray;
+            }
+            table {
+              width: 30%;
+              
+              border-collapse: collapse;
+            }
+  
