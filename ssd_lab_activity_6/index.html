@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>company</title>
+        <link rel="stylesheet" href="dark.css">
+    </head>
+    <body>
+        <!-- <script>
+            detect();
+        </script> -->
+        <script type="text/javascript" src="alert.js"></script>  
+        <button onclick="dark()">Toggle dark mode</button>
+
+<div>
+    <h1>Team Form </h1>
+    <form onsubmit="msg()">
+        <label for="mname">Manager Name</label>
+        <input type="text" id="mname" name="mname" required><br><br>
+        <label for="femail">Group email</label>
+        <input type="email" id="femail" name="femail" required><br><br>
+        <label for="seruser">Server Username</label>
+        <input oninput="uservalid()" type="text" id="seruser" name="seruser"  required>
+        <label for="userv" id="lol"></label><br><br>
+        <label for="serpass">Server Password</label>
+        <input type="password" id="serpass" name="serpass" required><br><br>
+        <label for="serpassc">Confirm Password</label>
+        <input oninput="passcheck()" type="password" id="serpassc" name="serpassc" required>
+        <label  for="userv" id="lol2"></label><br><br>
+        <label for="teamlead">Team Lead:</label>
+        <select name="teamlead" id="teamlead" required>
+            <option value="tony">tony</option>
+            <option value="steve">steve</option>
+            <option value="bruce">bruce</option>
+            <option value="clint">clint</option>
+            <option value="thor">thor</option>
+            <option value="natasha">thor</option>
+          </select>
+        <input type="submit" value="Submit">
+      </form>
+</div>
+
+    </body>
+</html>
